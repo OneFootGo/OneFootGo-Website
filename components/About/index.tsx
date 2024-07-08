@@ -13,11 +13,9 @@ const About = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "SOLID FEATURES",
+              title: "ONEFOOTGO FEATURES",
               subtitle: "Core Features of Onefootgo",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+              description: `Onefootgo utilizes advanced machine learning and AI algorithms to provide you with tailored gameplay stats and insights. Our platform is designed to deliver recommendations and strategies that will help you improve your game instantly. `,
             }}
           />
           {/* <!-- Section Title End --> */}
@@ -78,7 +76,7 @@ const About = () => {
             >
               <span className="font-medium uppercase text-black dark:text-white">
                 <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
-                  New
+                  Coming Soon
                 </span>{" "}
                 SaaS Boilerplate for Next.js
               </span>

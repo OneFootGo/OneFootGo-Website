@@ -12,10 +12,11 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
-  description: "This is Home for Solid Pro",
+  title: "Onefootgo",
+  description: "This is the landing page for Onefootgo.",
   // other metadata
 };
 
@@ -24,7 +25,6 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <FeaturesTab />
       <FAQ />
       <Contact />
     </main>

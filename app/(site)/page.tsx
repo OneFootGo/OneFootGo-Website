@@ -23,18 +23,10 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Brands />
-      <Feature />
       <About />
       <FeaturesTab />
-      <FunFact />
-      <Integration />
-      <CTA />
       <FAQ />
-      <Testimonial />
-      <Pricing />
       <Contact />
-      <Blog />
     </main>
   );
 }

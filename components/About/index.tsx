@@ -13,9 +13,9 @@ const About = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "ONEFOOTGO FEATURES",
-              subtitle: "Core Features of Onefootgo",
-              description: `Onefootgo utilizes advanced machine learning and AI algorithms to provide you with tailored gameplay stats and insights. Our platform is designed to deliver recommendations and strategies that will help you improve your game instantly. `,
+              title: "OneFootGo FEATURES",
+              subtitle: "Core Features of OneFootGo",
+              description: `OneFootGo utilizes advanced machine learning and AI algorithms to provide you with tailored gameplay stats and insights. Our platform is designed to deliver recommendations and strategies that will help you improve your game instantly. `,
             }}
           />
           {/* <!-- Section Title End --> */}
@@ -78,12 +78,11 @@ const About = () => {
                 <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
                   Coming Soon
                 </span>{" "}
-                SaaS Boilerplate for Next.js
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                A Complete Solution for
+                Advanced Footwork Analysis with 
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                  SaaS Startup
+                  Heatmaps
                 </span>
               </h2>
               <p>

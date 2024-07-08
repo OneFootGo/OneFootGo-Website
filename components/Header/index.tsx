@@ -46,7 +46,7 @@ const Header = () => {
               className="hidden w-full dark:block"
             />
             <Image
-              src="public/images/logo/onefootgo.svg"
+              src="public/images/logo/OneFootGo.svg"
               alt="logo"
               width={119.03}
               height={30}

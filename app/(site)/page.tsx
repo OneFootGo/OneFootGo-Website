@@ -15,8 +15,8 @@ import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Onefootgo",
-  description: "This is the landing page for Onefootgo.",
+  title: "OneFootGo",
+  description: "This is the landing page for OneFootGo.",
   // other metadata
 };
 

@@ -1,1 +1,1 @@
-# Onefootgo Website
+# OneFootGo Website

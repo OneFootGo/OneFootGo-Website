@@ -47,7 +47,7 @@ const FeaturesTab = () => {
             whileInView="visible"
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="animate_top mb-15 flex flex-wrap justify-center rounded-[10px] border border-stroke bg-white shadow-Onefootgo-5 dark:border-strokedark dark:bg-blacksection dark:shadow-Onefootgo-6 md:flex-nowrap md:items-center lg:gap-7.5 xl:mb-21.5 xl:gap-12.5"
+            className="animate_top mb-15 flex flex-wrap justify-center rounded-[10px] border border-stroke bg-white shadow-OneFootGo-5 dark:border-strokedark dark:bg-blacksection dark:shadow-OneFootGo-6 md:flex-nowrap md:items-center lg:gap-7.5 xl:mb-21.5 xl:gap-12.5"
           >
             <div
               onClick={() => setCurrentTab("tabOne")}

@@ -16,16 +16,16 @@ const Hero = () => {
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥  OneFootGo - Tools to maximize your performance
+                🔥  OneFootGo - Sports Tools to Maximize your Performance
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-                Professional-grade Sports Analysis Tools for {"   "}
+                Professional-Grade Sports Analysis Tools for {"   "}
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
                   Everyone
                 </span>
               </h1>
               <p>
-                OneFootGo - A platform of sports analysis tools helping athletes from all levels to maximize their performance. With the power of AI and Machine Learning, get personalized insights and recommendations on everything from your first tennis serve to your last golf swing.
+                OneFootGo - A sports analysis platform helping athletes of all levels to maximize their performance. With the power of AI and Machine Learning, get personalized insights and recommendations on everything from your first tennis serve to your last golf swing.
               </p>
 
               <div className="mt-10">

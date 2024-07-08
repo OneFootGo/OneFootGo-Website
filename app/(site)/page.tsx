@@ -13,6 +13,7 @@ import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "OneFootGo",
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
+      <Analytics />
       <Hero />
       <About />
       <FAQ />

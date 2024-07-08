@@ -13,7 +13,7 @@ const About = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "OneFootGo FEATURES",
+              title: "ONEFOOTGO FEATURES",
               subtitle: "Core Features of OneFootGo",
               description: `OneFootGo utilizes advanced machine learning and AI algorithms to provide you with tailored gameplay stats and insights. Our platform is designed to deliver recommendations and strategies that will help you improve your game instantly. `,
             }}

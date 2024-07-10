@@ -1,4 +1,5 @@
-import {kv} from '@vercel/kv';
+
+import { Client, Client } from '@vercel/postgres';
 
 
 export async function POST(request) {
@@ -11,9 +12,14 @@ export async function POST(request) {
     });
   }
 
+  const client = new Client({
+    connectionString: process.env.POSTGRES_URL,
+    });
+
   try {
-    await kv.set(`email:${email}`, { email });
-    console.log('Email saved in KV:', email);
+    await client.connect();
+    const res = await client.query('INSERT INTO emails (email) VALUES ($1) RETURNING *', [email]);
+    await client.end();
 
     return new Response(JSON.stringify({ message: 'Email received successfully' }), {
       status: 200,

@@ -9,7 +9,7 @@ const faqData: FAQ[] = [
   {
     id: 2,
     quest: "What other sports will you support?",
-    ans: "OneFootGo is starting off as a tennis analysis platform, but we plan to expand to other sports in the future. We can't say this with certainty yet, but running and golf are coming up soon after. Other sports are in the pipeline, so please leave feedback to help guide our future!",
+    ans: "OneFootGo is starting off as a tennis analysis platform and we plan to expand in the future. Based off of preliminary interest, running and golf will be in development soon. Other sports are in the pipeline, so please leave feedback below to help guide our future!",
   },
   {
     id: 3,

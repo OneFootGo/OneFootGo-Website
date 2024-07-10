@@ -3,6 +3,7 @@ import {kv} from '@vercel/kv';
 
 export async function POST(request) {
   const { email } = await request.json();
+  console.log('Recieved Email:', email);
 
   if (!email) {
     return new Response(JSON.stringify({ error: 'Email is required' }), {
@@ -12,6 +13,7 @@ export async function POST(request) {
 
   try {
     await kv.set(`email:${email}`, { email });
+    console.log('Email saved in KV:', email);
 
     return new Response(JSON.stringify({ message: 'Email received successfully' }), {
       status: 200,

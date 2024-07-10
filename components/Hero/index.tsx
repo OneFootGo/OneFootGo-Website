@@ -1,5 +1,7 @@
+
 "use client";
 import Image from "next/image";
+<script src="http://localhost:8097"></script>
 import { useState } from "react";
 
 const Hero = () => {

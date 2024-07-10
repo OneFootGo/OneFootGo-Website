@@ -39,17 +39,17 @@ const Header = () => {
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
             <Image
-              src="/images/logo/logo-dark.svg"
+              src="/images/logo/Onefootgo.png"
               alt="logo"
               width={119.03}
               height={30}
               className="hidden w-full dark:block"
             />
             <Image
-              src="public/images/logo/OneFootGo.svg"
+              src="/images/logo/Onefootgo.png"
               alt="logo"
-              width={119.03}
-              height={30}
+              width={150}
+              height={60}
               className="w-full dark:hidden"
             />
           </a>

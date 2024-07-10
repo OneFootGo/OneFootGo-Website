@@ -102,7 +102,7 @@ const Hero = () => {
                 <div className=" relative aspect-[700/444] w-full">
                   <Image
                     className="shadow-solid-l dark:hidden"
-                    src="/images/hero/pawelzmarlak-2024-07-09T07_30_36.992Z.png"
+                    src="/images/hero/hero-light.png"
                     alt="Hero"
                     fill
                   />

@@ -47,13 +47,15 @@ const About = () => {
                 src="/images/about/HPE_light.png"
                 alt="About"
                 className="dark:hidden"
-                fill
+                width={588}
+                height={526.5}
               />
               <Image
                 src="/images/about/HPE_dark.png"
                 alt="About"
                 className="hidden dark:block"
-                fill
+                width={588}
+                height={526.5}
               />
             </motion.div>
             <motion.div
@@ -186,13 +188,15 @@ const About = () => {
                 src="/images/hero/hero-light.png"
                 alt="About"
                 className="dark:hidden"
-                fill
+                width={588}
+                height={526.5}
               />
               <Image
                 src="/images/hero/hero-dark.png"
                 alt="About"
                 className="hidden dark:block"
-                fill
+                width={588}
+                height={526.5}
               />
             </motion.div>
           </div>

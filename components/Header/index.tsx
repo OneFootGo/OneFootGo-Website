@@ -39,14 +39,14 @@ const Header = () => {
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
             <Image
-              src="/images/logo/Onefootgo.png"
+              src="/images/logo/logo-dark.png"
               alt="logo"
-              width={119.03}
-              height={30}
+              width={150}
+              height={60}
               className="hidden w-full dark:block"
             />
             <Image
-              src="/images/logo/Onefootgo.png"
+              src="/images/logo/logo-light.png"
               alt="logo"
               width={150}
               height={60}
@@ -54,7 +54,8 @@ const Header = () => {
             />
           </a>
 
-          <div className="mt-7 flex items-center gap-6 xl:mt-0">
+          <div className="mt-7 mb-7
+           flex items-center gap-6 xl:mt-0">
             <ThemeToggler />
           </div>
         </div>

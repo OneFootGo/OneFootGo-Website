@@ -4,7 +4,7 @@ const faqData: FAQ[] = [
   {
     id: 1,
     quest: "When will I get access?",
-    ans: "The platform is still in development, but everything on this website comes from prototypes of OneFootGo. We are working hard to launch a beta version soon. Sign up for our waitlist to be the first to know when we launch!",
+    ans: "The platform is still in development, but we are working hard to launch a beta version soon. Sign up for our waitlist to be the first to know when we launch!",
   },
   {
     id: 2,

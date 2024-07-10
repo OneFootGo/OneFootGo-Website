@@ -4,9 +4,32 @@ import { useState } from "react";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setMessage("");
+
+    try {
+      const res = await fetch('/api/email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const result = await res.json();
+
+      if (!res.ok) {
+        throw new Error(result.error || 'There was an error submitting the email');
+      }
+
+      setMessage(result.message);
+    } catch (error) {
+      setMessage(error.message);
+      console.error('There was an error submitting the email:', error);
+    }
   };
 
   return (
@@ -16,7 +39,7 @@ const Hero = () => {
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥  OneFootGo - Sports Tools to Maximize your Performance
+                🎾  OneFootGo - Sports Tools to Maximize your Performance
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
                 Professional-Grade Sports Analysis Tools for {"   "}
@@ -29,12 +52,12 @@ const Hero = () => {
               </p>
 
               <div className="mt-10">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} >
                   <div className="flex flex-wrap gap-5">
                     <input
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      type="text"
+                      type="email"
                       placeholder="Enter your email address"
                       className="rounded-full border border-stroke px-6 py-2.5 shadow-solid-2 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
                     />

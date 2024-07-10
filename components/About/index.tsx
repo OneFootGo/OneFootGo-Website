@@ -44,13 +44,13 @@ const About = () => {
               className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="/images/about/about-light-01.png"
+                src="/images/about/HPE_light.png"
                 alt="About"
                 className="dark:hidden"
                 fill
               />
               <Image
-                src="/images/about/about-dark-01.png"
+                src="/images/about/HPE_dark.png"
                 alt="About"
                 className="hidden dark:block"
                 fill
@@ -80,14 +80,13 @@ const About = () => {
                 </span>{" "}
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Advanced Footwork Analysis with 
+                Advanced Form Correction with 
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                  Heatmaps
+                  Human Pose Estimation
                 </span>
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                With powerful machine learning models and player footage, OneFootGo can provide detailed insights about your form. Our platform can analyze your movements and empower you to improve you game.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
@@ -98,9 +97,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    React 18, Next.js 13 and TypeScript
+                    Highly Accurate Joint Tracking
                   </h3>
-                  <p>Ut ultricies lacus non fermentum ultrices.</p>
+                  <p>Trained on custom datasets, our models are designed specifically for personalized form correction.</p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
@@ -111,9 +110,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    Fully Customizable
+                    Comprehensive Reporting
                   </h3>
-                  <p>consectetur adipiscing elit fermentum ultricies.</p>
+                  <p>Access detailed reports that highlight your performance metrics and improvement over time.</p>
                 </div>
               </div>
             </motion.div>
@@ -145,34 +144,23 @@ const About = () => {
               className="animate_left md:w-1/2"
             >
               <h4 className="font-medium uppercase text-black dark:text-white">
-                Launch Your SaaS Fast
+                Track your stats
               </h4>
-              <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Packed with All Essential {"   "}
+              <h2 className="relative mb-6 text-4xl font-bold text-black dark:text-white xl:text-hero">
+                Track your Progress and {"   "}
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
-                  Integrations
+                  Elevate Your Game
                 </span>
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                Get stats that give you the ability to improve immediately with in-depth analysis of your gameplay. Highlights include shot speed, player speed, and accurate ball tracking to help you make data driven decisions.
               </p>
               <div>
                 <a
                   href="#"
                   className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
                 >
-                  <span className="duration-300 group-hover:pr-2">
-                    Know More
-                  </span>
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="currentColor"
-                  >
-                    <path d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z" />
-                  </svg>
+                  
                 </a>
               </div>
             </motion.div>
@@ -195,13 +183,13 @@ const About = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="./images/about/about-light-02.svg"
+                src="/images/hero/hero-light.png"
                 alt="About"
                 className="dark:hidden"
                 fill
               />
               <Image
-                src="./images/about/about-dark-02.svg"
+                src="/images/hero/hero-dark.png"
                 alt="About"
                 className="hidden dark:block"
                 fill

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   title: "OneFootGo",
   description: "Professional-Grade Sports Analysis Tools for Everyone",
   openGraph: {
-    images: "https://onefootgo.com/app/opengraph-image.png"
+    images: "https://onefootgo.com/opengraph-image.png"
   }
 };
 
@@ -45,7 +45,7 @@ export default function Home() {
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="OneFootGo" />
         <meta property="og:description" content="Professional-Grade Sports Analysis Tools for Everyone" />
-        <meta property="og:image" content="https://onefootgo.com/app/opengraph-image.png" />
+        <meta property="og:image" content="https://onefootgo.com/opengraph-image.png" />
         <meta property="og:url" content="https://onefootgo.com" />
         <meta property="og:type" content="website" />
 

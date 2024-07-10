@@ -1,12 +1,11 @@
 
 "use client";
 import Image from "next/image";
-<script src="http://localhost:8097"></script>
 import { useState } from "react";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("Join the waitlist and be the first to know when we launch.");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,7 +26,7 @@ const Hero = () => {
         throw new Error(result.error || 'There was an error submitting the email');
       }
 
-      setMessage(result.message);
+      setMessage("Thanks for joining the waitlist! Keep an eye on your inbox for futher information.");
     } catch (error) {
       setMessage(error.message);
       console.error('There was an error submitting the email:', error);
@@ -73,7 +72,7 @@ const Hero = () => {
                 </form>
 
                 <p className="mt-5 text-black dark:text-white">
-                  Join the waitlist and be the first to know when we launch.
+                  {message}
                 </p>
               </div>
             </div>

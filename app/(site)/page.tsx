@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
@@ -12,9 +13,8 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
-import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react"
-import Head from "next/head";
+
 
 interface ExtendedMetadata extends Metadata {
   image: string;
@@ -26,12 +26,14 @@ interface ExtendedMetadata extends Metadata {
   image: "https://onefootgo.com/images/logo/logo-light.png",
   url: "https://onefootgo.com",
 };*/
-export const metadata = {
+export const metadata: Metadata = {
   title: "OneFootGo",
   description: "Professional-Grade Sports Analysis Tools for Everyone",
-  image: "https://onefootgo.com/images/logo/logo-light.png",
-  url: "https://onefootgo.com",
-} as Metadata;
+  openGraph: {
+    images: "https://onefootgo.com/app/opengraph-image.png"
+  }
+};
+
 
 export default function Home() {
   return (
@@ -43,16 +45,10 @@ export default function Home() {
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="OneFootGo" />
         <meta property="og:description" content="Professional-Grade Sports Analysis Tools for Everyone" />
-        <meta property="og:image" content="https://onefootgo.com/images/logo/logo-light.png" />
+        <meta property="og:image" content="https://onefootgo.com/app/opengraph-image.png" />
         <meta property="og:url" content="https://onefootgo.com" />
         <meta property="og:type" content="website" />
 
-        {/* Twitter Meta Tags */}
-        <meta property="twitter:domain" content="onefootgo.com" />
-        <meta property="twitter:url" content="https://onefootgo.com" />
-        <meta name="twitter:title" content="OneFootGo" />
-        <meta name="twitter:description" content="Professional-Grade Sports Analysis Tools for Everyone" />
-        <meta name="twitter:image" content="https://onefootgo.com/path-to-your-logo.jpg" />
       </Head>
       <main>
         <Analytics />

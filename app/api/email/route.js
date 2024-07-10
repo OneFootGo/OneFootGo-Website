@@ -1,6 +1,5 @@
 import {kv} from '@vercel/kv';
 
-import { kv } from '@vercel/kv';
 
 export async function POST(request) {
   const { email } = await request.json();

@@ -16,11 +16,22 @@ import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react"
 import Head from "next/head";
 
-export const metadata: Metadata = {
+interface ExtendedMetadata extends Metadata {
+  image: string;
+}
+
+/*export const metadata: ExtendedMetadata = {
   title: "OneFootGo",
   description: "Professional-Grade Sports Analysis Tools for Everyone",
-  // other metadata
-};
+  image: "https://onefootgo.com/images/logo/logo-light.png",
+  url: "https://onefootgo.com",
+};*/
+export const metadata = {
+  title: "OneFootGo",
+  description: "Professional-Grade Sports Analysis Tools for Everyone",
+  image: "https://onefootgo.com/images/logo/logo-light.png",
+  url: "https://onefootgo.com",
+} as Metadata;
 
 export default function Home() {
   return (

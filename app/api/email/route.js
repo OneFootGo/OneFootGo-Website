@@ -1,9 +1,8 @@
-import {kv} from '@vercel/kv';
-
+import { Client } from 'pg';
 
 export async function POST(request) {
   const { email } = await request.json();
-  console.log('Recieved Email:', email);
+  console.log('Received email:', email); // Log the received email
 
   if (!email) {
     return new Response(JSON.stringify({ error: 'Email is required' }), {
@@ -11,9 +10,19 @@ export async function POST(request) {
     });
   }
 
+  const client = new Client({
+    connectionString: process.env.POSTGRES_URL, // Ensure this environment variable is set in your Vercel dashboard
+  });
+
   try {
-    await kv.set(`email:${email}`, { email });
-    console.log('Email saved in KV:', email);
+    await client.connect();
+    console.log('Connected to database'); // Log database connection
+
+    const res = await client.query('INSERT INTO emails (email) VALUES ($1) RETURNING *', [email]);
+    console.log('Insert result:', res.rows[0]); // Log the result of the insert operation
+
+    await client.end();
+    console.log('Database connection closed'); // Log the closure of the database connection
 
     return new Response(JSON.stringify({ message: 'Email received successfully' }), {
       status: 200,

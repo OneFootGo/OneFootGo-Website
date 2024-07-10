@@ -14,6 +14,7 @@ import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react"
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "OneFootGo",
@@ -23,12 +24,32 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
-      <Analytics />
-      <Hero />
-      <About />
-      <FAQ />
-      <Contact />
-    </main>
+    <>
+      <Head>
+        <title>OneFootGo</title>
+        <meta name="description" content="Professional-Grade Sports Analysis Tools for Everyone" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="OneFootGo" />
+        <meta property="og:description" content="Professional-Grade Sports Analysis Tools for Everyone" />
+        <meta property="og:image" content="https://onefootgo.com/images/logo/logo-light.png" />
+        <meta property="og:url" content="https://onefootgo.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Meta Tags */}
+        <meta property="twitter:domain" content="onefootgo.com" />
+        <meta property="twitter:url" content="https://onefootgo.com" />
+        <meta name="twitter:title" content="OneFootGo" />
+        <meta name="twitter:description" content="Professional-Grade Sports Analysis Tools for Everyone" />
+        <meta name="twitter:image" content="https://onefootgo.com/path-to-your-logo.jpg" />
+      </Head>
+      <main>
+        <Analytics />
+        <Hero />
+        <About />
+        <FAQ />
+        <Contact />
+      </main>
+    </>
   );
 }

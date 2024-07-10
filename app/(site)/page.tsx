@@ -17,7 +17,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "OneFootGo",
-  description: "This is the landing page for OneFootGo.",
+  description: "Professional-Grade Sports Analysis Tools for Everyone",
   // other metadata
 };
 

@@ -29,38 +29,34 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-99999 w-full py-7 ${
-        stickyMenu
-          ? "bg-white !py-4 shadow transition duration-100 dark:bg-black"
-          : ""
-      }`}
-    >
-      <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
-        <div className="flex w-full items-center justify-between xl:w-1/4">
-          <a href="/">
-            <Image
-              src="/images/logo/logo-dark.png"
-              alt="logo"
-              width={150}
-              height={60}
-              className="hidden w-full dark:block"
-            />
-            <Image
-              src="/images/logo/logo-light.png"
-              alt="logo"
-              width={150}
-              height={60}
-              className="w-full dark:hidden"
-            />
-          </a>
-
-          <div className="mt-7 mb-7
-           flex items-center gap-6 xl:mt-0">
-            <ThemeToggler />
-          </div>
-        </div>
-      </div>
-    </header>
+  className={`fixed left-0 top-0 z-99999 w-full py-7 ${
+    stickyMenu ? "bg-white !py-4 shadow transition duration-100 dark:bg-black" : ""
+  }`}
+>
+  <div className="relative mx-auto max-w-c-1390 flex justify-between items-center px-4 md:px-12 xl:px-">
+    <div className="flex items-center">
+      <a href="/">
+        <Image
+          src="/images/logo/logo-dark.png"
+          alt="logo"
+          width={150}
+          height={60}
+          className="hidden w-full dark:block"
+        />
+        <Image
+          src="/images/logo/logo-light.png"
+          alt="logo"
+          width={150}
+          height={60}
+          className="w-full dark:hidden"
+        />
+      </a>
+    </div>
+    <div className="flex items-center gap-6">
+      <ThemeToggler />
+    </div>
+  </div>
+</header>
   );
 };
 

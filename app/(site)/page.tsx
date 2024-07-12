@@ -14,6 +14,8 @@ import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 
 interface ExtendedMetadata extends Metadata {
@@ -52,6 +54,7 @@ export default function Home() {
       </Head>
       <main>
         <Analytics />
+        <SpeedInsights />
         <Hero />
         <About />
         <FAQ />

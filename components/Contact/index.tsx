@@ -205,7 +205,7 @@ const Contact = () => {
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">support@onefootgo.com</a>
+                  <a href="#">team@onefootgo.com</a>
                 </p>
               </div>
               {/*<div>
